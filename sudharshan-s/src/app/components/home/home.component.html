@@ -1,0 +1,153 @@
+<!-- Hero Section -->
+<section class="hero-section d-flex align-items-center justify-content-center">
+    <div class="text-center">
+        <h1>A selfless act is beyond measure, like the boundless depths of the ocean</h1>
+        <h1>—it knows no limits.</h1>
+        <p>Start a Journey with Sudharshan!!</p>
+        <!-- Scroll Button -->
+        <a href="#about" class="btn-scroll" title="Scroll Down">
+            <i class="bi bi-chevron-down"></i>
+        </a>
+    </div>
+</section>
+
+
+<!--About Section-->
+<section id="about" class="about-section">
+    <h2 class="about-name">SUDHARSHAN</h2>
+    <p class="about-content">
+        Sudharshan is a dedicated Software Engineer known for his friendly nature and unwavering love for his friends
+        and family. A passionate pet lover and an enthusiastic sportsman, he brings a vibrant energy to everything he
+        does. With
+        over a year of experience in software development, Sudharshan excels in Java full stack and Angular,
+        and is also an inspiring motivator on topics such as confidence, mindset, and emotional intelligence.
+        Explore Sudharshan's journey and the resources he shares, reflecting his commitment to personal and professional
+        growth.
+    </p>
+    <button class="btn-know-more" (click)="scrollToSection('know more')">Know More</button>
+</section>
+
+
+<section id="services" class="services-section">
+
+    <h2 class="service-content">Services</h2>
+    <!-- First Bullet (Latest Work Experience) -->
+    <div class="experience-item">
+        <h3 class="experience-title">Associate Software Engineer</h3>
+        <p class="experience-company"><em>CGI Information Systems and Management Consultants Pvt Ltd, Chennai</em></p>
+        <p class="experience-timeframe">August 2022 - December 2023</p>
+        <p class="experience-description">
+            At CGI, I contributed to both front-end and back-end development, playing a key role in <em>designing</em> and
+            <em>implementing user interfaces</em> and <em>server-side</em> logic. I collaborated closely with senior developers to troubleshoot and
+            resolve issues, ensuring the smooth deployment of applications. My responsibilities included participating in <em>code reviews</em>,
+            adhering to best practices and coding standards, and assisting in maintaining project documentation. I also supported the team
+            throughout various stages of the development lifecycle.
+        </p>
+    </div>
+
+    <!-- Second Bullet (Previous Experience) -->
+    <div class="experience-item">
+        <h3 class="experience-title">Engineering Intern</h3>
+        <p class="experience-company"><em>CGI Information Systems and Management Consultants Pvt Ltd</em></p>
+        <p class="experience-timeframe">May 2022 - July 2022</p>
+        <p class="experience-description">
+            As an Engineering Intern, I focused on learning and applying skills in both <em>Java</em> and the <em>MEAN</em> stack.
+            I assisted in coding, testing, and debugging tasks under the guidance of senior engineers. My contributions
+            to the final project included implementing features and resolving issues, which were instrumental in ensuring a smooth delivery.
+            The successful completion of this project, for which I received a certificate, significantly enhanced my
+            technical skills and prepared me for future roles in software development.
+        </p>
+    </div>
+</section>
+
+<section id="know more" class="skills-section">
+    <!--Skills and Technlogy subsection-->
+    <h2 class="section-title">Skills and Technology</h2>
+    <div class="row">
+        <!-- Loop through each chunk of skills -->
+        <div *ngFor="let skillChunk of chunkedSkills" class="col-md-4 mb-4">
+            <div class="skill-box">
+                <div *ngFor="let skill of skillChunk" class="skill-item">
+                    <img [src]="skill.icon" alt="Skill Icon">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Project subsection-->
+    <section id="projects" class="projects-section">
+        <!-- Personal Projects Section Title -->
+        <h2 class="section-title">Personal Projects</h2>
+        <div class="projects-container">
+            <div class="row">
+                <!-- Projects -->
+                <div *ngFor="let item of projects" class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card">
+                        <div class="card-image">
+                            <img [src]="item.image" alt="Project" class="project-image">
+                        </div>
+                        <div class="card-content">
+                            <button class="card-title btn btn-details" (click)="toggle(item.id)">
+                                {{ item.title }}
+                            </button>
+                            <div *ngIf="item.showDetails" class="card-details">
+                                <p>{{ item.details }}</p>
+                                <a [href]="item.link" class="project-link" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+
+<!-- Contact Section -->
+<section id="contacts" class="contact-section">
+    <div class="subscribe-container">
+        <h2>Explore with Sudharshan</h2>
+        <p class="subscribe-description">
+            Stay updated with my latest projects, blog posts, and more. Join the community and let's explore the tech world together!
+        </p>
+        <button class="btn-subscribe" (click)="subscribe()">Subscribe</button>
+        <p *ngIf="isSubscribed" class="subscribe-success">Subscribed successfully! Thank you for joining.</p>
+    </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="footer-section">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left Side: Social Icons -->
+            <div class="col-md-4 footer-left">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sudharshan-s-0663392b4/" target="_blank">
+                        <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn"> LinkedIn
+                    </a>
+                    <a href="https://github.com/sudhar31" target="_blank">
+                        <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub"> GitHub
+                    </a>
+                    <a href="https://x.com/Sudharshan31200" target="_blank">
+                        <img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter"> Twitter
+                    </a>
+                </div>
+            </div>
+            <!-- Center: Contact Info -->
+            <div class="col-md-4 footer-center">
+                <p>Email: <a href="mailto:shansudhar209@gmail.com">shansudhar209&#64;gmail.com</a></p>
+                <p>Phone: +91-1234567890</p>
+                <p>© 2024 Sudharshan. All rights reserved.</p>
+                <p>Address: B 37, TNHB, Annalagraharam, Kalimuthu nagar, Kumbakonam south, Kumbakonam 612001, Tamilnadu, India</p>
+                <p><strong>Visit: </strong> <a href="https://sudhar31.github.io/my-portfolio/" target="_blank"> www.sudharshan-s.com</a></p>
+            </div>
+            <!-- Right Side: Links -->
+            <div class="col-md-4 footer-right">
+                <a href="/privacy">Privacy Policy</a> | 
+                <a href="/terms">Terms & Conditions</a>
+            </div>
+        </div>
+    </div>
+</footer>

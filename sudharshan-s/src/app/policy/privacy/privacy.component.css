@@ -1,0 +1,87 @@
+/* Privacy Container */
+.privacy-container {
+    background-color: #2E073F; /* Dark Blue */
+    color: #ECF0F1; /* Light Gray */
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 80px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #AD49E1; /* Bright Yellow */
+}
+
+.privacy-container h2 {
+    font-size: 1.75rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #AD49E1; /* Yellow */
+}
+
+.privacy-container p, .privacy-container ul {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.checkbox-container label {
+    font-size: 1.2rem;
+}
+
+.btn-know-more {
+    display: block;
+    background-color: #AD49E1; /* Bright Yellow */
+    color: #2E073F; /* Dark Blue */
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+.btn-know-more:hover {
+    background-color: #EBD3F8; /* Slightly darker yellow on hover */
+}
+
+@media (max-width: 768px) {
+    .privacy-container {
+        padding: 40px 15px;
+    }
+
+    .privacy-container h1 {
+        font-size: 2rem;
+    }
+
+    .privacy-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .privacy-container p, .privacy-container ul {
+        font-size: 1rem;
+    }
+
+    .btn-know-more {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}

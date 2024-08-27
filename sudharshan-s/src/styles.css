@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #2E073F;
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #1f1f1f;
+}
+
+a {
+    color: #bb86fc;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/* Tablet devices */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Laptops and desktops */
+@media (min-width: 992px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    body {
+        font-size: 22px;
+    }
+}

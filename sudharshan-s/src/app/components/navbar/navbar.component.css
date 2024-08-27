@@ -1,0 +1,68 @@
+/* Base styles for Navbar */
+.navbar {
+    background: #2E073F;
+    /* Semi-transparent background */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Style when scrolled */
+.navbar.scrolled {
+    background-color: #281045;
+    /* Dark background color */
+    box-shadow: 0 4px 8px rgba(43, 25, 64, 0.2);
+    /* Shadow for a subtle 3D effect */
+}
+
+/* Brand styling */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-transform: uppercase;    
+    letter-spacing: 1px;    
+    text-align: center;    
+    line-height: 1.2;
+    margin-left: 5rem; /* Adjust space to the left of the text */
+    padding-right: 7rem;    
+    white-space: pre-wrap;
+    
+}
+
+.navbar-brand:hover {
+    color: #EBD3F8;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: #f8f9fa;
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    align-content: center;
+    padding-right: 2rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #AD49E1;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.navbar-nav .nav-link.active {
+    color: #EBD3F8;
+    font-weight: bold;
+
+}
+
+/* Social Icons */
+.navbar-nav .nav-link i {
+    font-size: 1.25rem;
+    color: #f8f9fa;
+    transition: color 0.5s ease;
+}
+
+.navbar-nav .nav-link i:hover {
+    color: #522258;
+}
+
